@@ -57,4 +57,19 @@ body {
   outline: none;
   box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.5); 
 }
-
+   /* Estilos para la sección de programación usando CSS Grid */
+    .programming-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .programming-card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .programming-card h5 {
+      margin: 10px;
+    }
