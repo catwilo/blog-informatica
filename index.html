@@ -1,98 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog</title>
-  <link href="css/styles.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-</head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Blog</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="etica-digital.html">Ética Digital</a></li>
-            <li class="nav-item"><a class="nav-link" href="derechos-de-autor.html">Derechos de Autor</a></li>
-            <li class="nav-item"><a class="nav-link" href="privacidad-digital.html">Privacidad Digital</a></li>
-            <li class="nav-item"><a class="nav-link" href="#programacion">Programación</a></li>
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!-- Vincula tu archivo de estilos CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Vincula Bootstrap desde CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Vincula Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Blog</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="etica-digital.html">Ética Digital</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="derechos-de-autor.html"
+                  >Derechos de Autor</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="privacidad-digital.html"
+                  >Privacidad Digital</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#programacion">Programación</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-  <!-- Barra lateral -->
-  <div id="sidebar" class="offcanvas offcanvas-end" tabindex="-1" aria-labelledby="sidebarLabel">
-    <div class="offcanvas-header">
-      <h5 id="sidebarLabel" class="text-primary">Formulario</h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <!-- Incrustar el formulario en el sidebar -->
+    <!-- Barra lateral -->
+    <div
+      id="sidebar"
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      aria-labelledby="sidebarLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 id="sidebarLabel" class="text-primary">Formulario</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
       <div class="offcanvas-body">
-  <script type="text/javascript" src="https://form.jotform.com/jsform/243317810690657"></script>
-</div>
-
-    </div>
-  </div>
-
-  <!-- Botón flotante para abrir la barra lateral -->
-  <button id="toggleSidebar" class="btn-primary position-fixed" style="top: 80px; right: 20px;" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar">
-    <i class="bi bi-clipboard"></i> <!-- Icono de formulario -->
-  </button>
-
-  <main class="container mt-4">
-    <div class="text-center">
-      <h1>Bienvenido al Blog</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Explora los temas en el menú.</p>
+        <!-- Incrustar el formulario en el sidebar -->
+        <script
+          type="text/javascript"
+          src="https://form.jotform.com/jsform/243317810690657"
+        ></script>
+      </div>
     </div>
 
-    <!-- Sección de Programación -->
-    <section id="programacion" class="mt-5">
-      <h2 class="text-center">Programación</h2>
-      <p class="text-center">Aquí encontrarás algunos videos útiles sobre programación.</p>
+    <!-- Botón flotante para abrir la barra lateral -->
+    <button
+      id="toggleSidebar"
+      class="btn-primary position-fixed"
+      style="top: 80px; right: 20px"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#sidebar"
+      aria-controls="sidebar"
+    >
+      <i class="bi bi-clipboard"></i>
+      <!-- Icono de formulario -->
+    </button>
 
-      <h3 class="mt-4">Fundamentos de Programación</h3>
-      <div class="programming-section">
-        <div class="programming-card">
-          <iframe width="100%" height="200" src="https://www.youtube.com/embed/1Rs2ND1ryYc" frameborder="0" allowfullscreen></iframe>
-          <h5 class="text-center">HTML y CSS para Principiantes</h5>
-          <p class="text-center">Un tutorial completo sobre cómo crear páginas web utilizando HTML y CSS.</p>
-        </div>
+    <main class="container mt-4">
+      <div class="text-center">
+        <h1>Bienvenido al Blog</h1>
       </div>
 
-      <h3 class="mt-4">Lenguajes de Programación Avanzados</h3>
-      <div class="programming-section">
-        <div class="programming-card">
-          <iframe width="100%" height="200" src="https://www.youtube.com/embed/3JZ_D3ELwOQ" frameborder="0" allowfullscreen></iframe>
-          <h5 class="text-center">Python para Principiantes</h5>
-          <p class="text-center">Descubre cómo empezar a programar en Python, uno de los lenguajes más versátiles y fáciles de aprender.</p>
+      <!-- Sección de Programación -->
+      <section id="programacion" class="mt-5">
+        <h2 class="text-center">Programación</h2>
+        <p class="text-center">
+          Aquí encontrarás algunos videos útiles sobre programación.
+        </p>
+
+        <h3 class="mt-4">Fundamentos de Programación</h3>
+        <div class="programming-section">
+          <div class="programming-card">
+            <iframe
+              width="100%"
+              height="200"
+              src="https://www.youtube.com/embed/1Rs2ND1ryYc"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h5 class="text-center">HTML y CSS para Principiantes</h5>
+            <p class="text-center">
+              Un tutorial completo sobre cómo crear páginas web utilizando HTML
+              y CSS.
+            </p>
+          </div>
         </div>
-        <div class="programming-card">
-          <iframe width="100%" height="200" src="https://www.youtube.com/embed/6iF8Xb7Z3wQ" frameborder="0" allowfullscreen></iframe>
-          <h5 class="text-center">Introducción a React</h5>
-          <p class="text-center">Aprende a construir interfaces de usuario con React, una de las bibliotecas más populares de JavaScript.</p>
+
+        <h3 class="mt-4">Lenguajes de Programación Avanzados</h3>
+        <div class="programming-section">
+          <div class="programming-card">
+            <iframe
+              width="100%"
+              height="200"
+              src="https://www.youtube.com/embed/3JZ_D3ELwOQ"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h5 class="text-center">Python para Principiantes</h5>
+            <p class="text-center">
+              Descubre cómo empezar a programar en Python, uno de los lenguajes
+              más versátiles y fáciles de aprender.
+            </p>
+          </div>
+          <div class="programming-card">
+            <iframe
+              width="100%"
+              height="200"
+              src="https://www.youtube.com/embed/6iF8Xb7Z3wQ"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h5 class="text-center">Introducción a React</h5>
+            <p class="text-center">
+              Aprende a construir interfaces de usuario con React, una de las
+              bibliotecas más populares de JavaScript.
+            </p>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="text-center p-2 bg-dark text-white mt-4">© 2024</footer>
+    <footer class="text-center p-2 bg-dark text-white mt-4">
+      © 2024 - Blog
+    </footer>
 
-  <!-- Enlace a Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Enlace a Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Vincula tu archivo main.js -->
-  <script src="js/main.js"></script>
-</body>
-
+    <!-- Vincula tu archivo main.js -->
+    <script src="js/main.js"></script>
+  </body>
 </html>

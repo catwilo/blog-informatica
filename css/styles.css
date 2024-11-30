@@ -1,14 +1,8 @@
-* {
-    margin: 0; padding: 0; box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif; background: #f4f4f4;
+  font-family: Arial, sans-serif;
+  background-color:#e5e7e9  !important;
 }
 
-.container {
-    display: grid; grid-template-columns: 3fr 1fr; gap: 20px; padding: 20px;
-}
 
 .content {
     background: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -25,10 +19,9 @@ body {
 .sidebar iframe {
     width: 100%; height: 600px; border: none;
 }
-.nav-link.active {
-  color: #ffcc00; 
-  text-decoration: underline; 
-  font-weight: bold; 
+.nav-item .nav-link.active {
+  text-decoration: none !important;
+  font-weight: bold !important;
 }
 
 .btn-primary {
@@ -73,3 +66,61 @@ body {
     .programming-card h5 {
       margin: 10px;
     }
+    /* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+h1, h3 {
+  color: #333;
+}
+
+/* Estilo para la tabla */
+.table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.table td {
+  background-color: #f9f9f9;
+}
+
+/* Estilo para las secciones de texto e imagen */
+.imagen-texto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.imagen-texto img {
+  padding: 50px;
+  max-width: 45%;
+  height: auto;
+}
+
+.texto {
+  flex: 1;
+  padding-right: 20px;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 10px 0;
+}
+
